@@ -1,0 +1,48 @@
+@keyframes gradientBackground {
+  0% {
+    background-color: #4d82b0;
+  }
+  50% {
+    background-color: #03346e;
+  }
+  100% {
+    background-color: #4d82b0;
+  }
+}
+@keyframes floatIcons {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+body {
+  height: 100vh;
+  margin: 0;
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+}
+.floating-icon {
+  position: absolute;
+  width: 80px;
+  opacity: 0.7;
+  animation: floatIcons 10s linear infinite;
+}
+
+.floating-icon:nth-child(3) {
+  top: 5%;
+  animation-delay: 0s;
+}
+.floating-icon:nth-child(4) {
+  top: 15%;
+  animation-delay: 2s;
+}
+.floating-icon:nth-child(5) {
+  top: 30%;
+  animation-delay: 4s;
+}
+.floating-icon:nth-child(6) {
+  top: 50%;
+  animation-delay: 6s;
+}
