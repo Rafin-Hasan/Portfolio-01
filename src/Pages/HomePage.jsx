@@ -1,12 +1,12 @@
 import React from "react";
 import HomeComponent from "../Components/Home/HomeComponent";
+import Skills from "./Skills";
 
 const HomePage = () => {
   return (
     <>
-      <div className="relative">
-        <HomeComponent />
-      </div>
+      <HomeComponent />
+      <Skills />
     </>
   );
 };
